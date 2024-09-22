@@ -14,3 +14,5 @@ menores frequências;
 - Dadas quaisquer novas frases, o sistema mostra como a sentença é convertida em
 código de huffman e depois decodificada de volta para a sentença original; 
 - Foi utilizada a biblioteca externa GraphViz para exibir árvore huffman criada para cada página.
+
+Foi feita uma análise de complexidade dos algoritmos utilizados, testes de execução para diferentes entradas e entrega de um relatório.
