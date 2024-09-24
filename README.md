@@ -16,3 +16,5 @@ código de huffman e depois decodificada de volta para a sentença original;
 - Foi utilizada a biblioteca externa GraphViz para exibir árvore huffman criada para cada página.
 
 Foi feita uma análise de complexidade dos algoritmos utilizados, testes de execução para diferentes entradas e entrega de um relatório.
+
+- Link para o video de apresentação do seminário: https://drive.google.com/file/d/1BmRJrExc-SZNYG9uZJ_dnCHJ9JdNSnGa/view?usp=sharing
