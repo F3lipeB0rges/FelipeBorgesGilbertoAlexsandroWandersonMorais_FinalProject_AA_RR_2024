@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web Computer Science Tutorials, books, and information">
+    <meta name="author" content="">
+    <meta name="keywords" content="Summations,Programming, Computer Science,Lessons, Discrete Mathematics">
+
+    <title>CS Summations</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Custom CSS for the 'Round About' Template -->
+    <link href="/css/round-about.css" rel="stylesheet">
+    <!-- Custom CSS for 'col-portfolio' Template -->
+    <link href="/css/1-col-portfolio.css" rel="stylesheet">
+    <link href="/css/thumbnail-gallery.css" rel="stylesheet">
+    <link href="/css/half-slider.css" rel="stylesheet">
+    <!-- Custom CSS for 'flex-video' Responsive Video -->
+    <link href="/css/responsive-video.css" rel="stylesheet">
+
+    <!-- GOOGLE Analytics Script -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44983844-1', 'everythingcomputerscience.com');
+  ga('send', 'pageview');
+</script>
+<!-- End GOOGLE Analytics Script -->
+
+<!-- GOOGLE New Ad script -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8380969288939810",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- End GOOGLE New Ad script -->
+
+<!-- tab icon -->
+<link rel="icon" type="image/jpg" href="/images/cs.jpg">
+
+  </head>
+
+  <body>
+   <!-- Start Navigation -->
+  <div class="navbar-wrapper">
+   <div class="container">
+   <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/CS.html">CS</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li class="inactive"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="inactive"><a href="/CSHistory.html"><span class="glyphicon glyphicon-time"></span> History</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-film"></span> Lessons<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/algorithms/Algorithms.html"><span class="glyphicon glyphicon-tint"></span>Algorithms</a>
+                      <ul >
+                        <li><a href="/algorithms/CSSorting_Algorithms.html">Sorting Algorithms</a></li>
+                        <li><a href="/algorithms/CSDivide_and_Conquer_Algorithm.html">Divide and Conquer Algorithm</a></li>
+                        <li><a href="/algorithms/Dijkstras_Algorithm.html">Dijkstra's Algorithm</a></li>
+                        <li><a href="/algorithms/Greedy_Algorithm.html">Greedy Algorithm</a></li>
+                        <li><a href="/algorithms/Algorithm_Analysis.html">Algorithm Analysis</a></li>
+                      </ul>
+                  </li>
+                  <li ><a href="/programming/Programming.html" ><span class="glyphicon glyphicon-tint"></span>Programming</a>
+                      <ul >
+                        <li><a href="/programming/Java.html">Java</a></li>
+                        <li><a href="/programming/C.html">C</a></li>
+                        <li><a href="/programming/Haskell.html">Haskell</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="/discrete_mathematics/Discrete_Mathematics.html"><span class="glyphicon glyphicon-tint"></span>Discrete Mathematics</a>
+                      <ul >
+                        <li><a href="/discrete_mathematics/Proof_by_Induction.html">Proof by Induction</a></li>
+                        <li><a href="/discrete_mathematics/Counting.html">Counting</a></li>
+                        <li><a href="/discrete_mathematics/Recurrence_Relations.html">Recurrence Relations</a></li>
+                        <li><a href="/discrete_mathematics/Recurssion.html">Recursion</a></li>
+                        <li><a href="/discrete_mathematics/Data_Structures.html">Data Structures</a></li>
+                        <li><a href="/discrete_mathematics/Logic.html">Logic</a></li>
+                        <li><a href="/discrete_mathematics/Stacks_and_Queues.html">Stacks and Queues</a></li>
+                        <li><a href="/discrete_mathematics/Sets.html">Sets</a></li>
+                        <li><a href="/discrete_mathematics/Summations.html">Summations</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="/CSVideoLessons.html"><span class="glyphicon glyphicon-tint"></span>Video Lessons</a></li>
+                </ul>
+            </li>
+            <li class="inactive"><a href="/CSJobs.html"><span class="glyphicon glyphicon-user"></span> Jobs</a></li>
+            <li class="inactive"><a href="/CSPuzzles.html"><span class="glyphicon glyphicon-star"></span> Puzzles</a></li>
+            <li class="inactive"><a href="/CSBooks_PDFs.html"><span class="glyphicon glyphicon-book"></span> Books/PDFs</a></li>
+<li class="inactive"><a href="/CSArticles.html"><span class="glyphicon glyphicon-folder-open"></span> Articles</a></li>
+            <li class="inactive"><a href="/CSContactUs.html"><span class="glyphicon glyphicon-phone"></span> Contact Us</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </div>
+
+ </div>
+</div>
+<!-- End Navigation -->
+<!-- End Menu -->
+    
+ <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="fill" style="background-image:url('/images/windows21900x1080.jpg');"></div>
+            <div class="carousel-caption">
+              <h1>Windows</h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('/images/android1900x1080.jpg');"></div>
+            <div class="carousel-caption">
+              <h1>Linux-Android</h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('/images/ipod1900x1080.jpg');"></div>
+            <div class="carousel-caption">
+              <h1>Apple Inc. Ipod</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="icon-next"></span>
+        </a>
+    </div>
+    <!-- End Carousel -->
+
+<!-- Video Section -->
+    <div class="container">
+
+      <div class="row">
+      
+        <div class="col-lg-12 ">
+          <h1 class="page-header">Discrete Mathematics </h1>
+        </div>
+
+        <div class="jumbotron hero-spacer">
+        <h1>Summations</h1>
+        <p> Summation is the operation of adding a sequence of numbers; the result is their sum or total.</p>
+      </div>
+      
+
+
+
+      </div>
+      <hr>
+      <!-- Start all video Rows -->
+      <!-- Video Row 1 -->
+      <div class="row">
+        
+                
+
+        <div class="col-lg-7 col-md-7">
+        <h3 class="page-header">Overview:</h3> 
+         <p> 
+                 Often mathematical formulae require the addition of many variables. Summation or sigma notation is a convenient and simple form of shorthand used to give a concise expression for a sum of the values of a variable. A summation is simply the act or process of adding.
+         </p>
+          <p><b>Examples of summations:</b>
+                 <ol>
+                       <li>1 + 2 + 3 + 4 + 5 = 15</li>
+                       <li>2 + 2 + 2 + 2 = 8</li>
+                       <li>3 + 6 + 9  = 3( 1 + 2 + 3) = 3(6) = 18</li>
+                       <li> 1+10 + 100 + 1000 = 10<sup>0</sup> + 10<sup>1</sup> + 10<sup>2</sup> + 10<sup>3</sup> = 1,111 </li>
+                 </ol>
+         </p>
+         
+    
+
+        </div>
+
+        <div class="col-lg-5 col-md-5">  
+<a class="thumbnail" href="/images/summation2.jpg" target="_blank"><img class="img-responsive" src="/images/summation2.jpg"></a>
+        </div>
+
+      </div>
+
+      <hr>
+      <!-- End Video Row 1 -->
+
+   <!-- Video Row 1.1 -->
+      <div class="row">
+        
+                
+
+        <div class="col-lg-7 col-md-7">
+        <h3 class="page-header">Summation Notation Involves:</h3> 
+          <p>
+                 <ol>
+                       <li>The summation sign, S, instructs us to sum the elements of a sequence.</li>
+                       <li>A typical element of the sequence which is being summed appears to the right of the summation sign.</li>
+                       <li>The variable of summation, i.e. the variable which is being summed</li>
+                       <li> The variable of summation is represented by an index which is placed beneath the summation sign.</li>
+                       <li>The index is often represented by i. (Other common possibilities for representation of the index are j and t.) The index appears as the expression i = 1.</li>
+                       <li> The index assumes values starting with the value on the right hand side of the equation and ending with the value above the summation sign.</li>
+                       <li>The starting point for the summation or the lower limit of the summation</li>
+                       <li>The stopping point for the summation or the upper limit of summation</li>
+                 </ol>
+         </p>
+         
+    
+
+        </div>
+
+        <div class="col-lg-5 col-md-5">  
+<a class="thumbnail" href="/images/summation_Ex.jpg" target="_blank"><img class="img-responsive" src="/images/summation_Ex.jpg"></a>
+        </div>
+
+      </div>
+
+      <hr>
+      <!-- End Video Row 1.1 -->
+
+<!-- Start Row for GOOGLE Adsense3Responsive row -->
+      <!-- Video Row X -->
+      <div class="row">
+
+        <div class="col-lg-12 col-md-12">  
+
+<!-- Start Thumbnail -->
+<a class="thumbnail" href="/images/recurrence_relations.jpg" target="_blank">
+	<!-- Start Google Adsense Code -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	          <!-- AdUnitRespSqr -->
+	          <ins class="adsbygoogle"
+	               style="display:block"
+	               data-ad-client="ca-pub-8380969288939810"
+	               data-ad-slot="7080763089"
+	               data-ad-format="auto"></ins>
+	          <script>
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	          </script>
+	<!-- End Google Adsense Code -->
+</a>
+<!-- End Thumbnail -->
+
+        </div>
+      </div>
+      <hr>
+      <!-- End Video Row X -->
+<!-- End Row for GOOGLE Adsense3 Responsive row -->
+
+<!-- Video Row 2 -->
+      <div class="row">
+
+<div class="col-lg-7 col-md-7">
+    <div class="span6">
+    <div class="flex-video widescreen">
+         <iframe width="500" height="300" src="https://www.youtube.com/embed/sKB1gj1NQi0?list=PLj68PAxAKGowkG1QYgun4DrByPwsyB04h" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
+
+        <div class="col-lg-5 col-md-5">
+          <h3>Summations and Algorithm Analysis </h3>
+          <a href="https://www.youtube.com/channel/UCaV_0qp2NZd319K4_K8Z5SQ" target="_blank"> randerson112358</a>
+          <p>Write a summation that represents the value of a variable.
+          </p>
+          <a class="btn btn-primary" href="/books/PDFs/summation1.pdf" target = "_blank">Download PDF <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+      </div>
+
+      <hr>
+      <!-- End Video Row 2 -->
+
+  <!-- Video Row 2.1 -->
+      <div class="row">
+        
+        <div class="col-lg-7 col-md-7">
+        <h3 class="page-header">Growth rates</h3> 
+         <p> 
+                Summations and algorithm analysis of programs with loops goes hand in hand. You can use summations to figure out your program or functions runtime. There are some particularly important summations, which you should probably commit to memory (or at least remember their asymptotic growth rates). For<b> example:<i>The summation from i=1 to n of i = n(n+1) / 2 ==> Θ(n<sup>2</sup>)</i></b>
+         </p>
+
+         <a class="btn btn-primary" href="/books/PDFs/lect3-sums-and-loops.pdf" target = "_blank">Download PDF <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+        </div>
+
+        <div class="col-lg-5 col-md-5">  
+<a class="thumbnail" href="/images/Summation_Theta_Approx.jpg" target="_blank"><img class="img-responsive" src="/images/Summation_Theta_Approx.jpg"></a>
+        </div>
+
+      </div>
+
+      <hr>
+      <!-- End Video Row 2.1 -->
+
+
+<!-- Start Row for GOOGLE Adsense3Responsive row -->
+      <!-- Video Row X -->
+      <div class="row">
+
+        <div class="col-lg-12 col-md-12">  
+
+<!-- Start Thumbnail -->
+<a class="thumbnail" href="/images/recurrence_relations.jpg" target="_blank">
+	<!-- Start Google Adsense Code -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	          <!-- AdUnitRespSqr -->
+	          <ins class="adsbygoogle"
+	               style="display:block"
+	               data-ad-client="ca-pub-8380969288939810"
+	               data-ad-slot="7080763089"
+	               data-ad-format="auto"></ins>
+	          <script>
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	          </script>
+	<!-- End Google Adsense Code -->
+</a>
+<!-- End Thumbnail -->
+
+        </div>
+      </div>
+      <hr>
+      <!-- End Video Row X -->
+<!-- End Row for GOOGLE Adsense3 Responsive row -->
+
+      <!-- End all video Rows -->
+      <!-- End Video Section -->
+
+
+<!-- Start Row  -->
+    <div class="container">
+      
+      <div class="row">
+      
+        <div class="col-lg-7 ">
+          <h1 class="page-header">Summations Formulas<small> Description</small></h1>
+          <p>Here are some of the most commonly used formulas for summations used in computer science.
+<a class="thumbnail" href="/images/summation_constant2_formula.gif" target="_blank"><img class="img-responsive" src="/images/summation_constant2_formula.gif"></a>
+<a class="thumbnail" href="/images/summation_constant_formula.jpg" target="_blank"><img class="img-responsive" src="/images/summation_constant_formula.jpg"></a>
+<a class="thumbnail" href="/images/summation_normal_formula.jpg" target="_blank"><img class="img-responsive" src="/images/summation_normal_formula.jpg"></a>
+<a class="thumbnail" href="/images/summation_normal_formula2.jpg" target="_blank"><img class="img-responsive" src="/images/summation_normal_formula2.jpg"></a>
+<a class="thumbnail" href="/images/summation_power2_formula.jpg" target="_blank"><img class="img-responsive" src="/images/summation_power2_formula.jpg"></a>
+<a class="thumbnail" href="/images/summation_power3_formula.jpg" target="_blank"><img class="img-responsive" src="/images/summation_power3_formula.jpg"></a>
+<a class="thumbnail" href="/images/summation_geometric_series_formula.jpg" target="_blank"><img class="img-responsive" src="/images/summation_geometric_series_formula.jpg"></a>
+<a class="thumbnail" href="/images/summation_geometric_series2_formula.jpg" target="_blank"><img class="img-responsive" src="/images/summation_geometric_series2_formula.jpg"></a>
+</p>
+</div>
+
+<div class="col-lg-5 ">
+<h1 class="page-header">Summation manipulation properties:</h1>  
+<a class="thumbnail" href="/images/summation_manip1.jpg" target="_blank"><img class="img-responsive" src="/images/summation_manip1.jpg"></a>
+<a class="thumbnail" href="/images/summation_manip2.jpg" target="_blank"><img class="img-responsive" src="/images/summation_manip2.jpg"></a>
+<a class="thumbnail" href="/images/summation_manip3.jpg" target="_blank"><img class="img-responsive" src="/images/summation_manip3.jpg"></a>
+<a class="thumbnail" href="/images/summation_manip4.jpg" target="_blank"><img class="img-responsive" src="/images/summation_manip4.jpg"></a>
+<a class="thumbnail" href="/images/summation_manip5.jpg" target="_blank"><img class="img-responsive" src="/images/summation_manip5.jpg"></a>
+<a class="thumbnail" href="/images/summation_manip6.jpg" target="_blank"><img class="img-responsive" src="/images/summation_manip6.jpg"></a>
+<a class="thumbnail" href="/images/summation_manip7.jpg" target="_blank"><img class="img-responsive" src="/images/summation_manip7.jpg"></a>
+<a class="thumbnail" href="/images/summation_manip8.jpg" target="_blank"><img class="img-responsive" src="/images/summation_manip8.jpg"></a>
+</div>
+      </div>
+<hr>
+
+<!-- Start Row for GOOGLE Adsense3Responsive row -->
+      <!-- Video Row X -->
+      <div class="row">
+
+        <div class="col-lg-12 col-md-12">  
+
+<!-- Start Thumbnail -->
+<a class="thumbnail" href="/images/recurrence_relations.jpg" target="_blank">
+	<!-- Start Google Adsense Code -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	          <!-- AdUnitRespSqr -->
+	          <ins class="adsbygoogle"
+	               style="display:block"
+	               data-ad-client="ca-pub-8380969288939810"
+	               data-ad-slot="7080763089"
+	               data-ad-format="auto"></ins>
+	          <script>
+	          (adsbygoogle = window.adsbygoogle || []).push({});
+	          </script>
+	<!-- End Google Adsense Code -->
+</a>
+<!-- End Thumbnail -->
+
+        </div>
+      </div>
+      <hr>
+      <!-- End Video Row X -->
+<!-- End Row for GOOGLE Adsense3 Responsive row -->
+
+<!-- Video Row 2 -->
+      <div class="row">
+
+<div class="col-lg-7 col-md-7">
+    <div class="span6">
+    <div class="flex-video widescreen">
+         <iframe width="500" height="300" src="https://www.youtube.com/embed/hXeb8cM5o_0?list=PLj68PAxAKGowkG1QYgun4DrByPwsyB04h" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
+
+        <div class="col-lg-5 col-md-5">
+          <h3>Summation </h3>
+          <a href="https://www.youtube.com/channel/UCaV_0qp2NZd319K4_K8Z5SQ" target="_blank"> randerson112358 </a>
+          <p>Learn what sum notation is and solve</p>
+          <a class="btn btn-primary" href="/books/PDFs/summation3.pdf" target = "_blank">Download PDF <span class="glyphicon glyphicon-chevron-right"></span></a>
+<a class="btn btn-default" href="/books/PDFs/summation2.pdf" target = "_blank">Download PDF <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+      </div>
+
+      <hr>
+      <!-- End Video Row 2 -->
+
+
+<div class="row">
+      
+        <div class="col-lg-12">
+<h3 class="page-header">Code:</h3>  
+        <pre class="pre-scrollable prettyprint">
+/* C Program for a simple summation */
+
+
+   # include &lt;stdio.h&gt;
+   
+    int main(void)
+    {
+       int n = 5, sum = 0, sum2;
+       int i;
+       
+       // A summation can be written as a for loop. Here the loop represents a summation from i=1 to n.
+       for( i=1; i<=n; i++)
+           sum += i;
+
+      // You can also use the formula to give an answer for sum.
+     sum2 = n * (n + 1) / 2;
+
+     printf("sum = %d, and sum2 = %d, they are the same number\n", sum, sum2);
+    
+     //Comment out the system("pause") if you are not using Windows
+     system("pause");
+    
+    }
+
+</pre>
+        </div>
+</div>
+
+    
+
+      <hr>
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Random Fun Facts -->
+              <script type="text/javascript">
+                 //store the quotations in arrays
+                 quotes = [];
+                 authors = [];
+                 quotes[0] = "Bill Gates, the founder of Microsoft was a college drop out.";
+                 authors[0] = "Charles Schulz";
+                 quotes[1] = "There are approx. 6,000 new computer viruses released every month.";
+                 authors[1] = "Jack Wagner";
+                 quotes[2] = "Doug Engelbart, invented the first computer mouse in the year 1964, which was made of wood!";
+                 authors[2] = "Mark Twain";
+                 quotes[3] = "While it took the radio 38 years, and the television a short 13 years, it took the World Wide Web only 4 years to reach 50 million users";
+                  authors[3] = "Oscar Wilde";
+                  quotes[4] = "About 70% virus writers are actually employed by an organization under a contract.";
+                  authors[4] = "David Letterman";
+                  quotes[5] = "HP, Google, Microsoft, and Apple have one thing in common. All of them were started in garages.";
+                  authors[5] = "Lily Tomlin";
+                  quotes[6] = "The house of Bill Gates was designed using a Macintosh computer.";
+                  authors[6] = "David Letterman";
+                  quotes[7] = "If you find a way to hack Facebook, the company will pay you $500. Hackers, go for it.";
+                  authors[7] = "David Letterman";
+                  quotes[8] = "The first internet banner ad was launched in 1994";
+                  authors[8] = "David Letterman";
+                  quotes[9] = "Until September 1995, domain registration was free.";
+                 authors[9] = "David Letterman";
+                 quotes[10] = "The Apple Lisa (1983) was the first successful computer with a graphical user interface (GUI) and a mouse. It cost $10,000.";
+                 authors[10] = "David Letterman";
+                 quotes[11] = "The domain name system of the Internet includes top level domains such as .com, .info, .net, .org, .edu, .mil and .gov as well as country specific domains and more.";
+                 authors[11] = "David Letterman";
+                 quotes[12] = "The 80's arcade game Phoenix was the first game ever, to introduce the concept of end-level bosses.";
+                 authors[12] = "David Letterman";
+                 quotes[13] = "The term 'bug' was used by Grace Hopper, who publicized the cause of a malfunction in an early computer do to an actual bug (a moth).";
+                 authors[13] = "David Letterman";
+                 quotes[14] = "The day after Internet Explorer 4 was released, a few Microsoft employees left a 10 by 12-foot Internet Explorer logo on Netscape's front lawn with a message that said 'We love you' at the height of the browser wars in the late 90s.";
+                 authors[14] = "David Letterman";
+
+
+
+                 //calculate a random index
+                 index = Math.floor(Math.random() * quotes.length);
+
+                 //display the quotation
+                 document.write("<DL>\n");
+                 document.write("<DT> <b>Fun Fact: </b>" + "\"" + quotes[index] + "\"\n");
+                //document.write("<DD>" + "-- " + authors[index] + "\n");
+                document.write("</DL>\n");
+
+                //done
+            </script>
+<!-- End random Fun Facts -->
+
+
+<!-- Donation button from Pay Pal -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="75V3B2YNAWC2A">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<!-- End Donation button -->
+
+           <p>Copyright &copy; 2013<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Everything Computer Science.</p>
+          </div>
+        </div>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+
+
+    <!-- JavaScript -->
+    <script src="/js/jquery-1.10.2.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <!-- Prettify Code with 'pre' or 'code' tag -->
+    <script src="/js/run_prettify.js"></script>
+   <!-- Script to Activate the Carousel -->
+    <script>
+      $('.carousel').carousel({
+        interval: 5000 //changes the speed
+      })
+    </script>
+
+  </body>
+</html>
